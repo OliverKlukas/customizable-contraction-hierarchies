@@ -66,14 +66,7 @@ The library depends on the following libraries for testing purposes only, that s
         ```shell
         cmake -DCMAKE_BUILD_TYPE=Release -DTEST_AGAINST_ROUTING_KIT=OFF .. && cmake --build .
         ```
-
-## Run examples instructions
-1. After having followed the [build instructions](#build-instructions), run the example application to showcase OptimizedKit's usage:
-    ```shell
-    cd build
-    ./example
-    ```
-
+        
 ## Test instructions
 1. After having followed the [build instructions](#build-instructions), test the code via:
     ```shell
