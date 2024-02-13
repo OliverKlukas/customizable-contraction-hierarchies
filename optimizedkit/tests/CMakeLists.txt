@@ -1,6 +1,5 @@
 # Tests independent of RoutingKit
 set(ROUTING_KIT_INDEPENDENT_SOURCES
-	graph_order_algorithms/dinic_min_cut_test.cpp
 	graph/csv_reader_test.cpp
 	priority_queues/binary_min_heap_test.cpp
 	customizable_contraction_hierarchy/customizable_contraction_hierarchy_test.cpp
@@ -11,17 +10,14 @@ set(ROUTING_KIT_INDEPENDENT_SOURCES
 	utils/vector_helper_test.cpp
 	test_utils/utils.hpp
 	utils/math_test.cpp
-	map/coordinate_to_vertex_mapper_test.cpp
 	priority_queues/pairing_min_heap_test.cpp)
 
 # Tests against RoutingKit
 set(ROUTING_KIT_DEPENDENT_SOURCES
-	graph_order_algorithms/nested_dissection_order_test.cpp
 	customizable_contraction_hierarchy/cch_preprocessor_test.cpp
 	customizable_contraction_hierarchy/cch_customizer_test.cpp
 	customizable_contraction_hierarchy/cch_query_test.cpp
-	customizable_contraction_hierarchy/cch_triangle_enumeration_test.cpp
-	customizable_contraction_hierarchy/cch_example_gen_test.cpp)
+	customizable_contraction_hierarchy/cch_triangle_enumeration_test.cpp)
 
 # Build all unit tests together
 option(TEST_AGAINST_ROUTING_KIT "Test against RoutingKit" ON)

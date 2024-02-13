@@ -1,6 +1,0 @@
-/home/olli/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/olli/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/olli/Uni/Master_Thesis/code/master-thesis/optimizedkit -B /home/olli/Uni/Master_Thesis/code/master-thesis/optimizedkit/cmake-build-debug
--- BUILD_EXAMPLES: OFF
--- TEST_AGAINST_ROUTING_KIT: ON
--- Configuring done (0.3s)
--- Generating done (0.0s)
--- Build files have been written to: /home/olli/Uni/Master_Thesis/code/master-thesis/optimizedkit/cmake-build-debug

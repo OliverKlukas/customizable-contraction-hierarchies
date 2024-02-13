@@ -18,13 +18,9 @@ set(LIBRARY_SOURCES
 	src/priority_queues/binary_min_heap.tpp
 	src/customizable_contraction_hierarchy/customizable_contraction_hierarchy.tpp
 	src/graph_order_algorithms/random_order.tpp
-	src/graph_order_algorithms/nested_dissection_inertial_flow_order.tpp
-	src/graph_order_algorithms/dinic_min_cut.tpp
 	src/map/csv_reader.cpp
 	include/priority_queues/binary_min_heap.hpp
-	include/graph_order_algorithms/dinic_min_cut.hpp
 	include/graph_order_algorithms/random_order.hpp
-	include/graph_order_algorithms/nested_dissection_inertial_flow_order.hpp
 	include/customizable_contraction_hierarchy/customizable_contraction_hierarchy.hpp
 	include/utils/types.hpp
 	include/map/csv_reader.hpp
@@ -79,18 +75,6 @@ target_compile_options(${PROJECT_NAME} PRIVATE
 					   $<$<CONFIG:Debug>:-g>
 					   $<$<CONFIG:Debug>:-UNDEBUG>
 )
-
-# Build example usage of library (conditionally)
-option(BUILD_EXAMPLES "Build example usage of the library" OFF)
-message(STATUS "BUILD_EXAMPLES: ${BUILD_EXAMPLES}")
-if (BUILD_EXAMPLES)
-	set(EXAMPLE_HELPER_SOURCES
-		examples/exampleHelper.cpp
-		examples/exampleHelper.hpp
-	)
-	add_executable(example_optimizedkit_osm_map_routing examples/example_optimizedkit_osm_map_routing.cpp ${EXAMPLE_HELPER_SOURCES})
-	target_link_libraries(example_optimizedkit_osm_map_routing PRIVATE ${PROJECT_NAME} ${ROUTING_KIT_LIBRARIES})
-endif ()
 
 # Include tests
 if(BUILD_TESTS)
