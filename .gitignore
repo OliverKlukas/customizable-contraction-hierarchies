@@ -1,0 +1,4 @@
+./external/*
+./optimizedkit/cmake-build-*
+./optimizedkit/.idea
+.idea
