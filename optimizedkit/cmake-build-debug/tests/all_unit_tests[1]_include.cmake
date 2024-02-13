@@ -1,0 +1,5 @@
+if(EXISTS "/home/olli/Uni/Master_Thesis/code/master-thesis/optimizedkit/cmake-build-debug/tests/all_unit_tests[1]_tests.cmake")
+  include("/home/olli/Uni/Master_Thesis/code/master-thesis/optimizedkit/cmake-build-debug/tests/all_unit_tests[1]_tests.cmake")
+else()
+  add_test(all_unit_tests_NOT_BUILT all_unit_tests_NOT_BUILT)
+endif()

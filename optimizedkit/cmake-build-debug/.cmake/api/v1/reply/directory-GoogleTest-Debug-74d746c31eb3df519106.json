@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "GoogleTest",
+		"source" : "/home/olli/Uni/Master_Thesis/code/master-thesis/external/GoogleTest"
+	}
+}

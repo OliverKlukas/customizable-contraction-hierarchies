@@ -1,0 +1,59 @@
+\doxysection{Input\+Validator Class Reference}
+\hypertarget{classInputValidator}{}\label{classInputValidator}\index{InputValidator@{InputValidator}}
+
+
+{\ttfamily \#include $<$input\+\_\+validator.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classInputValidator_a3afca5289d2771519f9937b0794a4eca}{validate\+\_\+osm\+\_\+path}} (const std\+::string \&osm\+\_\+path)
+\item 
+static bool \mbox{\hyperlink{classInputValidator_af15b96f47f0c409e3c4e37355b7f6cf8}{validate\+\_\+location}} (double lat, double lon)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides methods to validate user input. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classInputValidator_af15b96f47f0c409e3c4e37355b7f6cf8}\label{classInputValidator_af15b96f47f0c409e3c4e37355b7f6cf8} 
+\index{InputValidator@{InputValidator}!validate\_location@{validate\_location}}
+\index{validate\_location@{validate\_location}!InputValidator@{InputValidator}}
+\doxysubsubsection{\texorpdfstring{validate\_location()}{validate\_location()}}
+{\footnotesize\ttfamily bool Input\+Validator\+::validate\+\_\+location (\begin{DoxyParamCaption}\item[{double}]{lat,  }\item[{double}]{lon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Validates a location on a map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lat} & Latitude of the location. \\
+\hline
+{\em lon} & Longitude of the location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the location is valid, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classInputValidator_a3afca5289d2771519f9937b0794a4eca}\label{classInputValidator_a3afca5289d2771519f9937b0794a4eca} 
+\index{InputValidator@{InputValidator}!validate\_osm\_path@{validate\_osm\_path}}
+\index{validate\_osm\_path@{validate\_osm\_path}!InputValidator@{InputValidator}}
+\doxysubsubsection{\texorpdfstring{validate\_osm\_path()}{validate\_osm\_path()}}
+{\footnotesize\ttfamily bool Input\+Validator\+::validate\+\_\+osm\+\_\+path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{osm\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Validates the path to the Open\+Street\+Map PBF file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em osm\+\_\+path} & Path to the Open\+Street\+Map PBF file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the path is valid, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\mbox{\hyperlink{input__validator_8hpp}{input\+\_\+validator.\+hpp}}\item 
+src/utils/\mbox{\hyperlink{input__validator_8cpp}{input\+\_\+validator.\+cpp}}\end{DoxyCompactItemize}
